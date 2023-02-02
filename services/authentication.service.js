@@ -113,9 +113,6 @@ const checkUserExist = async (query) => {
 };
 
 const tokenVerification = async (req, res, next) => {
-  console.log(
-    `authentication.service | tokenVerification | ${req?.originalUrl}`
-  );
   try {
     if (
       req?.originalUrl.includes("/login") ||
